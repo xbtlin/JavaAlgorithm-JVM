@@ -1,4 +1,4 @@
-package com.sankuai.meishi.jvm.outofmemory;
+package com.xbtlin.jvm.outofmemory;
 
 import java.util.ArrayList;
 import java.util.List;

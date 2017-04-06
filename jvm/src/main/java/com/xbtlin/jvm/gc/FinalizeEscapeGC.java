@@ -1,4 +1,4 @@
-package com.sankuai.meishi.jvm.gc;
+package com.xbtlin.jvm.gc;
 
 /**
  * 此代码演示了两点：

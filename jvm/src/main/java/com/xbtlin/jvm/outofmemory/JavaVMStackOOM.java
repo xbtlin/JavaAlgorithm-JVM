@@ -1,4 +1,4 @@
-package com.sankuai.meishi.jvm.outofmemory;
+package com.xbtlin.jvm.outofmemory;
 
 /**
  * VM Args：-Xss2M （这时候不妨设大些）

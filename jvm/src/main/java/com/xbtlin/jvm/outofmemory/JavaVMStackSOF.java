@@ -1,4 +1,4 @@
-package com.sankuai.meishi.jvm.outofmemory;
+package com.xbtlin.jvm.outofmemory;
 
 /**
  * VM Args：-Xss128k
