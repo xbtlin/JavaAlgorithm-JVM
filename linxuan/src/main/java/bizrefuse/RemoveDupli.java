@@ -1,6 +1,8 @@
 package bizrefuse;
 
-import org.apache.commons.lang.StringUtils;
+
+
+import com.sun.tools.javac.util.StringUtils;
 
 import java.io.*;
 import java.util.HashMap;
@@ -13,6 +15,13 @@ import java.util.concurrent.ConcurrentHashMap;
  * Created by linxuan on 8/22/16.
  */
 public class RemoveDupli {
+
+    public static boolean isBlank(String a){
+        if (a.equals("NULL") || a.equals("")){
+            return true;
+        }
+        return false;
+    }
 
     public static void removeDup() throws IOException {
         BufferedReader bf1 = new BufferedReader(new FileReader("/Users/linxuan/unprocess0822"));
@@ -35,7 +44,7 @@ public class RemoveDupli {
             // 有NULL的,则略过
             int flag = 0;
             for(String str : arr){
-                if (str == null || str == "NULL" || StringUtils.isBlank(str)) {
+                if (str == null || str == "NULL" || isBlank(str)) {
                     flag=1;
                 }
             }
@@ -58,7 +67,7 @@ public class RemoveDupli {
             int flag = 0;
             System.out.println(arr.length + "\t");
             for(String str : arr){
-                if (str == null || str.equals("NULL") || StringUtils.isBlank(str)) {
+                if (str == null || str.equals("NULL") || isBlank(str)) {
                     flag=1;
                 }
             }

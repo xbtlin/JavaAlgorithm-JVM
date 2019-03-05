@@ -1,4 +1,4 @@
-package alogrithmsinjava;
+package alogrithmsinjava.sort;
 
 /**
  * Created by linxuan on 15/01/2017.
@@ -45,7 +45,8 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        int[] nums = new int[]{9,1,10,3,5,7,8,2,2,2,2,9,11};
+//        int[] nums = new int[]{9,1,10,3,5,7,8,2,2,2,2,9,11};
+        int[] nums=new int[]{7,3,1,5,6,8,9,5};
         QuickSort qs = new QuickSort();
         qs.sort(nums);
         for(int num : nums){

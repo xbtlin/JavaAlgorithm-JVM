@@ -1,5 +1,3 @@
-//package com.sankuai.meishi.jvm.outofmemory;
-//
 //import org.springframework.cglib.proxy.Enhancer;
 //import org.springframework.cglib.proxy.MethodInterceptor;
 //import org.springframework.cglib.proxy.MethodProxy;

@@ -1,4 +1,4 @@
-package alogrithmsinjava;
+package alogrithmsinjava.sort;
 
 /**
  * Created by linxuan on 12/02/2017.

@@ -1,6 +1,6 @@
 package GetOffer;
 
-import alogrithmsinjava.QuickSort;
+import alogrithmsinjava.sort.QuickSort;
 
 /**
  * Created by linxuan on 12/02/2017.

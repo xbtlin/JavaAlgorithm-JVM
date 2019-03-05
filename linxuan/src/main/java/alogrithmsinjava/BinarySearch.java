@@ -33,11 +33,39 @@ public class BinarySearch {
         return -1;
     }
 
+    public int bsearch(int[] a, int e, int n){
+        if(a == null || n <= 0) return -1;
+        int l = 0, h = n - 1;
+        while (l <=h){
+            int mid=l+(h-l)/2;
+            if(a[mid] < e) l = mid + 1;
+            else if(a[mid] > e) h = mid - 1;
+            else return mid;
+        }
+        return -1;
+    }
+
+    public int bsearch201903(int[] a, int e, int n) {
+        if(a == null || n <= 0) return -1;
+        int l = 0, h = n - 1;
+        while(l <= h) {
+            int mid = l + (h - l)/2;
+            if(a[mid] == e) return mid;
+            else if(a[mid] > e) h = mid - 1;
+            else l = mid + 1;
+        }
+        return -1;
+    }
+
     public static void main(String[] args) {
         int[] nums = new int[]{1,2,3,4,5,6,7,7,8,8,123,456,823,1024,1024};
+        for (int i : nums){
+            System.out.println(new BinarySearch().bsearch201903(nums,i,nums.length));
+        }
+
 //        for (int a : nums) {
 //            System.out.println(new BinarySearch().bs(a,nums));
 //        }
-        System.out.println(new BinarySearch().binSearch(8,nums));
+//        System.out.println(new BinarySearch().binSearch(8,nums));
     }
 }

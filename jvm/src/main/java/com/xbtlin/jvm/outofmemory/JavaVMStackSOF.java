@@ -29,42 +29,4 @@ public class JavaVMStackSOF {
         }
     }
 }
-/*
-Error: Could not create the Java Virtual Machine.
-Error: A fatal exception has occurred. Program will exit.
-The stack size specified is too small, Specify at least 160k
- */
-/*
 
-Exception in thread "main" java.lang.StackOverflowError
-stack length:1868
-	at com.sankuai.meishi.jvm.outofmemory.JavaVMStackSOF.stackLeak(JavaVMStackSOF.java:18)
-	at com.sankuai.meishi.jvm.outofmemory.JavaVMStackSOF.stackLeak(JavaVMStackSOF.java:19)
- */
-/*
-result:
-stack length:1868
-Exception in thread "main" java.lang.StackOverflowError
-/
-
-/*
-stack length:4847
-512k
-Exception in thread "main" java.lang.StackOverflowError
-	at com.sankuai.meishi.jvm.outofmemory.JavaVMStackSOF.stackLeak(JavaVMStackSOF.java:18)
-	at com.sankuai.meishi.jvm.outofmemory.JavaVMStackSOF.stackLeak(JavaVMStackSOF.java:19)
-	at com.sankuai.meishi.jvm.outofmemory.JavaVMStackSOF.stackLeak(JavaVMStackSOF.java:19)
-	at
- */
-//stack length:10828
-//	at com.sankuai.meishi.jvm.outofmemory.JavaVMStackSOF.stackLeak(JavaVMStackSOF.java:18)
-//	at com.sankuai.meishi.jvm.outofmemory.JavaVMStackSOF.stackLeak(JavaVMStackSOF.java:19)
-//	at com.sankuai.meishi.jvm.outofmemory.JavaVMStackSOF.stackLeak(JavaVMStackSOF.java:19)
-//	at com.sankuai.meishi.jvm.outofmemory.JavaVMStackSOF.stackLeak(JavaVMStackSOF.java:19)
-//	at com.sankuai.meishi.jvm.outofmemory.JavaVMStackSOF.stackLeak(JavaVMStackSOF.java:19)
-//	at com.sankuai.meishi.jvm.outofmemory.JavaVMStackSOF.stackLeak(JavaVMStackSOF.java:19)
-//	at com.sankuai.meishi.jvm.outofmemory.JavaVMStackSOF.stackLeak(JavaVMStackSOF.java:19)
-//	at com.sankuai.meishi.jvm.outofmemory.JavaVMStackSOF.stackLeak(JavaVMStackSOF.java:19)
-//	at com.sankuai.meishi.jvm.outofmemory.JavaVMStackSOF.stackLeak(JavaVMStackSOF.java:19)
-//	at com.sankuai.meishi.jvm.outofmemory.JavaVMStackSOF.stackLeak(JavaVMStackSOF.java:19)
-// */
